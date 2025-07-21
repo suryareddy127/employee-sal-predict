@@ -8,7 +8,7 @@ import os
 st.set_page_config(page_title="💵Salary Class Predictor", layout="centered")
 
 # 🎯 Load model
-model_path = os.path.join("models", "best_pipeline.pkl")
+model_path = os.path.join("models", "model.pkl")
 if not os.path.exists(model_path):
     st.error("❌ Model file not found. Please train and save pipeline first.")
     st.stop()

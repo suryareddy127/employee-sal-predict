@@ -9,7 +9,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 
 # 🔹 Load dataset
-df = pd.read_csv(r"data/adult 3.csv")
+df = pd.read_csv(r"adult 3.csv")
 df.replace("?", np.nan, inplace=True)
 df.dropna(inplace=True)
 df.reset_index(drop=True, inplace=True)
@@ -51,6 +51,7 @@ for name, model in models.items():
         ("preprocessor", preprocessor),
         ("classifier", model)
     ])
+
     pipeline.fit(X_train, y_train)
     score = pipeline.score(X_test, y_test)
     print(f"{name} accuracy: {score:.4f}")
@@ -61,5 +62,5 @@ for name, model in models.items():
         best_pipeline = pipeline
 
 # 🔹 Save pipeline
-joblib.dump(best_pipeline, "models/best_pipeline.pkl")
-print(f"\nSaved best model '{best_model_name}' to models/best_pipeline.pkl")
+joblib.dump(pipeline, "model.pkl")
+print(f"\nSaved best model '{best_model_name}' to best_model.pkl")
