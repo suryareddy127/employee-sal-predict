@@ -88,7 +88,7 @@ streamlit run app/app.py
 ----
 
 📚 References
-UCI Adult Income Dataset
+UCI Adult Income Dataset-https://archive.ics.uci.edu/ml/datasets/adult
 
 scikit-learn documentation: https://scikit-learn.org
 
