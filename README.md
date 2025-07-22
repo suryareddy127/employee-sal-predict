@@ -86,3 +86,16 @@ streamlit run app/app.py
 -https://de3e273e6f54.ngrok-free.app/
 
 ----
+
+📚 References
+UCI Adult Income Dataset
+
+scikit-learn documentation: https://scikit-learn.org
+
+Streamlit documentation: https://docs.streamlit.io
+
+pyngrok documentation: https://pyngrok.readthedocs.io
+
+XGBoost documentation: https://xgboost.readthedocs.io
+
+----
