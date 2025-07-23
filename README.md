@@ -96,6 +96,4 @@ Streamlit documentation: https://docs.streamlit.io
 
 pyngrok documentation: https://pyngrok.readthedocs.io
 
-XGBoost documentation: https://xgboost.readthedocs.io
-
 ----
